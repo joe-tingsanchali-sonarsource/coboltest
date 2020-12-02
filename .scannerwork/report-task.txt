@@ -1,6 +1,0 @@
-projectKey=testcobol
-serverUrl=http://localhost:8200
-serverVersion=8.2.0.32929
-dashboardUrl=http://localhost:8200/dashboard?id=testcobol
-ceTaskId=AXYlfKYAAHrGVvEjrlbp
-ceTaskUrl=http://localhost:8200/api/ce/task?id=AXYlfKYAAHrGVvEjrlbp
