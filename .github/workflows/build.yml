@@ -20,6 +20,15 @@ jobs:
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
-      - name: Sleep for 10 minutes
-        run: sleep 600s
+      # - name: Sleep for 10 minutes
+      #   run: sleep 600s
+      #   shell: bash
+      - name: nslookup
+        run: nslookup ee106-jting-us.ngrok.io
+        shell: bash
+      - name: ping
+        run: ping ee106-jting-us.ngrok.io
+        shell: bash
+      - name: ip address
+        run: ip a
         shell: bash
