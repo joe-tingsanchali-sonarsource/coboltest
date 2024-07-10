@@ -13,6 +13,12 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
+      - name: nslookup
+        run: nslookup ee106-jting-us.ngrok.io
+        shell: bash
+      - name: ip address
+        run: ip a
+        shell: bash
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0  # Shallow clones should be disabled for a better relevancy of analysis
@@ -23,12 +29,4 @@ jobs:
       # - name: Sleep for 10 minutes
       #   run: sleep 600s
       #   shell: bash
-      - name: nslookup
-        run: nslookup ee106-jting-us.ngrok.io
-        shell: bash
-      - name: ping
-        run: ping ee106-jting-us.ngrok.io
-        shell: bash
-      - name: ip address
-        run: ip a
-        shell: bash
+
